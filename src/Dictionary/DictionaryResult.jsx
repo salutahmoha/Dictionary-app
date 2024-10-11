@@ -3,21 +3,21 @@ import { useQuery } from 'react-query';
 import './Dictionary.css';
 
 function DictionaryResult({ word }) {
-//   const { data, error, isLoading } = useQuery(
-//     ['dictionary', word],
-//     async () => {
-//       if (!word) return null;
-//       const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-//       if (!response.ok) {
-//         throw new Error('Error fetching data');
-//       }
-//       return response.json();
-//     },
-//     { enabled: !!word }
-//   );
+  const { data, error, isLoading } = useQuery(
+    ['dictionary', word],
+    async () => {
+      if (!word) return null;
+      const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+      if (!response.ok) {
+        throw new Error('Error fetching data');
+      }
+      return response.json();
+    },
+    { enabled: !!word }
+  );
 
-//   if (isLoading) return <div className='dictionary-result'>Loading...</div>;
-//   if (error) return <div className='dictionary-result'>Error fetching data</div>;
+  if (isLoading) return <div className='dictionary-result'>Loading...</div>;
+  if (error) return <div className='dictionary-result'>Error fetching data</div>;
 
   return (
     <div className='dictionary-result'>
