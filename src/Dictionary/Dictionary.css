@@ -1,0 +1,64 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container-dictionary{
+    width: 100%;
+    height: 25rem;
+    background: rgba(0, 0, 255, 0.662);
+    text-align: center;
+    padding-top: 5rem;
+    color: #fff;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2rem;
+    padding: 3rem 0rem;
+    text-transform: capitalize;
+}
+input{
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: .5rem 0 0 .5rem;
+    border: none;
+    outline: none;
+}
+
+button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background: #e74545;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 .5rem .5rem 0;
+    outline: none;
+}
+
+
+.dictionary-result{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.results-container {
+    margin-top: 20px;
+    color: white;
+    text-align: start;
+    background: #016701;
+    text-align: start;
+  } */
